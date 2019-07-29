@@ -1,5 +1,5 @@
 env:
- dev
+ dev222
 server:
   port: 9090
 eureka:
