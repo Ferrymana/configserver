@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: api-agteway
+  cloud:
+    config:
+      discovery:
+        service-id: config-server
+        enabled: true
+      profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 5050
+ 
+zuul:
+  routes:
+    myProduct:  
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:  
+
+
+management:
+  security:
+    enabled: false
