@@ -1,0 +1,17 @@
+ spring:
+  config:
+    discover:
+      enabled: true
+        service-id: config-server
+      profile: dev
+  application:
+    name: product
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: YHP836143
+    url: jdbc:mysql://127.0.0.1/sell?characterEncoding=utf-8&useSSL=false
+    jpa:
+      show-sql: true
+    jackson:
+      default-property-inclusion: non_default
