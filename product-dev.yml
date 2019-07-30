@@ -1,13 +1,6 @@
  env:
   dev
  spring:
-  config:
-    discover:
-      enabled: true
-        service-id: config-server
-      profile: dev
-  application:
-    name: product
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
