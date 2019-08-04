@@ -1,11 +1,6 @@
 env:
- devs
-server:
-  port: 5050
- 
-spring:
-  application:
-    name: user
+  dev
+ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
@@ -13,8 +8,11 @@ spring:
     url: jdbc:mysql://127.0.0.1/sell?characterEncoding=utf-8&useSSL=false
     jpa:
       show-sql: true
+    rabbitmq:
+     host: 127.0.0.1
+     port: 5672
+     username: guest
+     password: guest
     jackson:
       default-property-inclusion: non_default
-   redis:
-     host: 127.0.0.1
-     port: 6379
+    
