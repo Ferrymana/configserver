@@ -1,7 +1,6 @@
 env:
  devs
-server:
-  port: 4040
+ 
 eureka:
   client:
     service-url:
