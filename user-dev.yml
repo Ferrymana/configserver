@@ -1,6 +1,14 @@
 env:
-  dev
- spring:
+ devs
+server:
+  port: 5050
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: user
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
@@ -8,11 +16,5 @@ env:
     url: jdbc:mysql://127.0.0.1/sell?characterEncoding=utf-8&useSSL=false
     jpa:
       show-sql: true
-    rabbitmq:
-     host: 127.0.0.1
-     port: 5672
-     username: guest
-     password: guest
     jackson:
       default-property-inclusion: non_default
-    
