@@ -1,7 +1,7 @@
 env:
  devs
 server:
-  port: 5050
+  port: 5000
 eureka:
   client:
     service-url:
