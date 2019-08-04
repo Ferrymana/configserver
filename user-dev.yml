@@ -1,7 +1,7 @@
 env:
  devs
 server:
-  port: 7070
+  port: 5050
  
 spring:
   application:
