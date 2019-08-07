@@ -1,0 +1,21 @@
+
+env:
+ devs
+server:
+  port: 1234
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: order-git
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: YHP836143
+    url: jdbc:mysql://127.0.0.1/sell?characterEncoding=utf-8&useSSL=false
+    jpa:
+      show-sql: true
+    jackson:
+      default-property-inclusion: non_default
